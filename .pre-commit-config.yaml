@@ -6,8 +6,6 @@ repos:
     - id: trailing-whitespace
     - id: check-json
     - id: check-yaml
-    #- id: detect-private-key
-    #- id: detect-aws-credentials
     #- id: no-commit-to-branch
     #  args: [--branch, master]
     - id: pretty-format-json
