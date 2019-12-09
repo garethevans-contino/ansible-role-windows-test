@@ -1,2 +1,27 @@
-repos: 
-- repo:
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+    - id: check-merge-conflict
+    - id: trailing-whitespace
+    - id: check-json
+    - id: check-yaml
+    #- id: detect-private-key
+    #- id: detect-aws-credentials
+    #- id: no-commit-to-branch
+    #  args: [--branch, master]
+    - id: pretty-format-json
+      args: [--autofix]
+- repo: https://github.com/Yelp/detect-secrets
+  rev: v0.13.0
+  hooks:
+    - id: detect-secrets
+      args: ['--baseline', '.secrets.baseline']
+      exclude: .*/tests/.*
+- repo: https://github.com/jumanjihouse/pre-commit-hooks
+  rev: 1.11.0
+  hooks:
+    - id: script-must-have-extension
+    - id: shfmt
+    - id: shellcheck
+      args: [-C, -e, SC1091, -e, SC2154]
