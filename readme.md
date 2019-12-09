@@ -23,14 +23,16 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 ### Linting/Validation Tools
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
-|**YAML Linting**|vx.x            ||
-|**JSON Linting**|vx.x            ||
+|**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
+|**JSON Linting**|v2.4.0           |https://github.com/pre-commit/pre-commit-hooks
 
  ### Formatting
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
-|**YAML Formatting**|vx.x            ||
-|**JSON Formatting**|vx.x            ||
+|**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
+|**JSON Linting**|v2.4.0           |https://github.com/pre-commit/pre-commit-hooks
+|**Shell Format**|v1.11.0           |https://github.com/jumanjihouse/pre-commit-hooks
+|**Shell Check**|v1.11.0           |https://github.com/jumanjihouse/pre-commit-hooks
 
 ## Setup
 
