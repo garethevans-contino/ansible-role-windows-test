@@ -38,9 +38,16 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 
 ### Developer(s) Machines Setup
 Run```pip install pre-commit``` on the developer machine for the pre-commit hooks to work.
+
 ### Repository Setup
-*You will only need to run this once against the repository on first setup.
-To install run ```pre-commit install``` to install pre-commit files into the repository.
+Create a new repository.
+Run:
+```git remote add base <urlToThisRepo>
+git fetch base```
+
+This pulls the content of the base repo into the new repository - similar to copying files from one directory into another but this has the added bonus that if a change is made to the base repository, we can pull that in and have the full commit history to go with it, this will be important.
+
+To install pre-commit run ```pre-commit install```.
 
 ## How to use
 Make a change and commit your changes, this will run the pre-commit hooks.
