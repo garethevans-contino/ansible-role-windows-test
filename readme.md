@@ -26,7 +26,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
 |**JSON Linting**|v2.4.0           |https://github.com/pre-commit/pre-commit-hooks
 
- ### Formatting
+### Formatting
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
 |**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
