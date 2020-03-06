@@ -43,7 +43,8 @@ Run```pip install pre-commit``` on the developer machine for the pre-commit hook
 Create a new repository, remember to not include any README otherwise it creates a master branch!
 
 Run:
-```git remote add base <urlToThisRepo>
+```
+git remote add base <urlToThisRepo>
 git fetch base
 git pull base master
 ```
