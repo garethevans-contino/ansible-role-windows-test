@@ -40,13 +40,14 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 Run```pip install pre-commit``` on the developer machine for the pre-commit hooks to work.
 
 ### Repository Setup
-Create a new repository, remember to not include any README otherwise it creates a master branch!
+Create a new repository, remember *DO NOT* include any README otherwise it creates a master branch!
 
 Run:
 ```
 git remote add base <urlToThisRepo>
 git fetch base
-git pull base master
+git merge base/master
+git push origin master
 ```
 
 This pulls the content of the base repo into the new repository - similar to copying files from one directory into another but this has the added bonus that if a change is made to the base repository, we can pull those changes in and have the full commit history to go with it.
