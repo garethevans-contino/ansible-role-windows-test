@@ -23,3 +23,7 @@ repos:
     - id: shfmt
     - id: shellcheck
       args: [-C, -e, SC1091, -e, SC2154]
+- repo: https://gitlab.com/devopshq/gitlab-ci-linter
+  rev: v1.0.0
+  hooks:
+    - id: gitlab-ci-linter            
