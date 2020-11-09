@@ -9,9 +9,9 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 
 ## History
 
-|Version                |Author                          |Changes                         |Date|
-|----------------|-------------------------------|-----------------------------|09/11/2020|
-|v0.1|Gareth Evans            |Initial Version|
+|Version                |Author                          |Changes                         |Date                         |
+|----------------|-------------------------------|-----------------------------|-----------------------------|
+|v0.1|Gareth Evans|Initial Version|09/11/2020|
 
 ## Under the bonnet/hood
 
