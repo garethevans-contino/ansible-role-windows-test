@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v2.4.0
+  rev: v3.3.0
   hooks:
     - id: check-merge-conflict
     - id: trailing-whitespace
@@ -11,19 +11,33 @@ repos:
     - id: pretty-format-json
       args: [--autofix]
 - repo: https://github.com/Yelp/detect-secrets
-  rev: v0.13.0
+  rev: v0.14.3
   hooks:
     - id: detect-secrets
       args: ['--baseline', '.secrets.baseline']
       exclude: .*/tests/.*
 - repo: https://github.com/jumanjihouse/pre-commit-hooks
-  rev: 1.11.0
+  rev: 2.1.4
   hooks:
     - id: script-must-have-extension
     - id: shfmt
     - id: shellcheck
+    - id: forbid-binary
+    - id: git-check  # Configure in .gitattributes
+    - id: git-dirty  # Configure in .gitignore
       args: [-C, -e, SC1091, -e, SC2154]
 - repo: https://gitlab.com/devopshq/gitlab-ci-linter
-  rev: v1.0.0
+  rev: v1.0.1
   hooks:
-    - id: gitlab-ci-linter            
+    - id: gitlab-ci-linter
+- repo: https://github.com/petalmd/dockerfile-pre-commit
+  rev: v1.0  # Use the revision rev you want to point at
+  hooks:
+  - id: dockerlint
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.44.0  # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terraform_validate
+    - id: terraform_tfsec
+    - id: terraform_fmt
+    - id: terraform_docs
