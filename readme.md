@@ -9,35 +9,51 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 
 ## History
 
-|Version                |Author                          |Changes                         |Date                         |
+|Version                |Author                          |Date|Changes
 |----------------|-------------------------------|-----------------------------|-----------------------------|
-|v0.1|Gareth Evans|Initial Version|09/11/2020|
+|v0.1|Gareth Evans|01/03/2020|Initial Version
+|v0.2|Gareth Evans|09/11/2020|Updated versions of components, added installation/setup for pre-commit, detect secrets and detect secrets use command lines.
 
 ## Under the bonnet/hood
 
 ### Security Tools
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
-|**Detect Secrets**|v0.13.0            |https://github.com/Yelp/detect-secrets|
+|**Detect Secrets**|v0.14.3            |https://github.com/Yelp/detect-secrets|
 
 ### Linting/Validation Tools
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
-|**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
-|**JSON Linting**|v2.4.0           |https://github.com/pre-commit/pre-commit-hooks
+|**YAML Linting**|v3.3.0            |https://github.com/pre-commit/pre-commit-hooks
+|**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
 
 ### Formatting
 |Name                |Version                          |URL                         |
 |----------------|-------------------------------|-----------------------------|
-|**YAML Linting**|v2.4.0            |https://github.com/pre-commit/pre-commit-hooks
-|**JSON Linting**|v2.4.0           |https://github.com/pre-commit/pre-commit-hooks
-|**Shell Format**|v1.11.0           |https://github.com/jumanjihouse/pre-commit-hooks
-|**Shell Check**|v1.11.0           |https://github.com/jumanjihouse/pre-commit-hooks
+|**YAML Linting**|v3.3.0            |https://github.com/pre-commit/pre-commit-hooks
+|**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
+|**Shell Format**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
+|**Shell Check**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
 
 ## Setup
 
 ### Developer(s) Machines Setup
-Run```pip install pre-commit``` on the developer machine for the pre-commit hooks to work.
+
+#### Pre-Commit
+Run```pip install pre-commit``` or ```brew install pre-commit``` on the developer machine to install pre-commit.
+https://pre-commit.com/#install
+
+#### Detect Secrets
+Run ```pip install detect-secrets``` to install detect-secrets.
+https://github.com/Yelp/detect-secrets
+https://github.com/Yelp/detect-secrets-server
+
+##### Using Detect-Secrets
+To create a new baseline remove the .secrets.baseline file and run ```detect-secrets audit .secrets.baseline```
+To audit a baseline run ```detect-secrets audit .secrets.baseline```
+To scan/update a baseline run ```detect-secrets scan --update .secrets.baseline```
+
+A baseline is an "white list" of secrets so the allowed secrets aren't caught in the scans.
 
 ### Repository Setup
 Create a new repository, remember *DO NOT* include any README otherwise it creates a master branch!
