@@ -68,10 +68,16 @@ git push origin master
 
 This pulls the content of the base repo into the new repository - similar to copying files from one directory into another but this has the added bonus that if a change is made to the base repository, we can pull those changes in and have the full commit history to go with it.
 
-To install pre-commit run ```pre-commit install```.
-
 ## How to use
+
+### Setup
+To setup the repositroy for running pre-commit run ```pre-commit install```.
+
+### Run automatically.
 Make a change and commit your changes, this will run the pre-commit hooks.
+
+### Run manually
+To run pre-commit manually, run ```pre-commit run -a```.
 
 ### How to bypass
 This is only to be used in an emergency as it will bypass the pre-commit hook checks.
