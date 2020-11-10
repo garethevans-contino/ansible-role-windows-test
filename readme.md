@@ -2,7 +2,7 @@
 
 ## Purpose
 
-To have a template repository with the minimum required pre-commit hooks ready to ensure developers are able to work without obsticles from security and linting checks but also a customisable platform for them to build on to help improve code quality.
+To have a template repository with the minimum required pre-commit hooks ready to ensure developers are able to work without obstacles from security and linting checks but also a customisable platform for them to build on to help improve code quality.
 
 ### Technology
 We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](https://pre-commit.com/)
@@ -27,7 +27,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |----------------|-------------------------------|-----------------------------|
 |**YAML Linting**|v3.3.0            |https://github.com/pre-commit/pre-commit-hooks
 |**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
-|**Ansible Linter**|v4.1.0           |https://github.com/ansible/ansible-lint
+|**Ansible Linter**|v4.3.7           |https://github.com/ansible/ansible-lint
 
 ### Formatting
 |Name                |Version                          |URL                         |
@@ -36,7 +36,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
 |**Shell Format**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
 |**Shell Check**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
-|**Ansible Linter**|v4.1.0           |https://github.com/ansible/ansible-lint
+|**Ansible Linter**|v4.3.7           |https://github.com/ansible/ansible-lint
 
 ## Setup
 
