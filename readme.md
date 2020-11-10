@@ -13,6 +13,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |----------------|-------------------------------|-----------------------------|-----------------------------|
 |v0.1|Gareth Evans|01/03/2020|Initial Version
 |v0.2|Gareth Evans|09/11/2020|Updated versions of components, added installation/setup for pre-commit, detect secrets and detect secrets use command lines.
+|v0.3|Gareth Evans|10/11/2020|Added Ansible Linter.
 
 ## Under the bonnet/hood
 
@@ -26,6 +27,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |----------------|-------------------------------|-----------------------------|
 |**YAML Linting**|v3.3.0            |https://github.com/pre-commit/pre-commit-hooks
 |**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
+|**Ansible Linter**|v4.1.0           |https://github.com/ansible/ansible-lint
 
 ### Formatting
 |Name                |Version                          |URL                         |
@@ -34,6 +36,7 @@ We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](ht
 |**JSON Linting**|v3.3.0           |https://github.com/pre-commit/pre-commit-hooks
 |**Shell Format**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
 |**Shell Check**|v2.1.4           |https://github.com/jumanjihouse/pre-commit-hooks
+|**Ansible Linter**|v4.1.0           |https://github.com/ansible/ansible-lint
 
 ## Setup
 
@@ -54,6 +57,9 @@ To audit a baseline run ```detect-secrets audit .secrets.baseline```
 To scan/update a baseline run ```detect-secrets scan --update .secrets.baseline```
 
 A baseline is an "white list" of secrets so the allowed secrets aren't caught in the scans.
+
+#### Ansible Linter
+Run ```pip install ansible-lint``` to install the ansible linter.
 
 ### Repository Setup
 Create a new repository, remember *DO NOT* include any README otherwise it creates a master branch!

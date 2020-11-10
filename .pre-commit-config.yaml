@@ -26,3 +26,8 @@ repos:
     - id: git-check  # Configure in .gitattributes
     - id: git-dirty  # Configure in .gitignore
       args: [-C, -e, SC1091, -e, SC2154]
+- repo: https://github.com/ansible/ansible-lint.git
+  rev: v4.1.0
+  hooks:
+    - id: ansible-lint
+      files: \.(yaml|yml)$
