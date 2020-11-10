@@ -2,7 +2,7 @@
 
 ## Purpose
 
-To have a template repository with the minimum required pre-commit hooks ready to ensure developers are able to work without obsticles from security and linting checks but also a customisable platform for them to build on to help improve code quality.
+To have a template repository with the minimum required pre-commit hooks ready to ensure developers are able to work without obstacles from security and linting checks but also a customisable platform for them to build on to help improve code quality.
 
 ### Technology
 We're using Pre-Commit Hooks and configuration from [https://pre-commit.com/](https://pre-commit.com/)
